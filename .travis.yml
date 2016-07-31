@@ -1,9 +1,19 @@
 language: node_js
 node_js:
-  - "6"
-  - "6.1"
-  - "5.11"
-  - "0.6"
-  - "iojs"
+- '6'
+- '6.1'
+- '5.11'
+- '0.6'
+- iojs
 notifications:
-  slack: anabere:ddLvRLWHI5v9v3HjqWgTMBfN
+  slack:
+    secure: VQeewxcj2Xf0c0wCl+R526rj6GhuxdwVTYe5jNwAlBosdcZ17GK+Jrsu2jbUwy5Fq2HWC7ohlwMoqkIaBEu1mYAicwb3oKqnk6YjGILwCHYZCafg8aN5eJrt3AO+3QxqDZLNU/p7FoJdvQFyFxldFwm5Ipo+gXxfsQijuCOdrYaQOFNOQcMN3C3vZhiTr+hDZvXB46vVl9c74qXs2LTri6S4NDSnXEioYWCFOItDF1vEYzXdqdBQDh36kfjM40WkxHP2zjefn4YM89uZo/k+7Q69I6EmxuyWYUshDuJ9z53/+dzJKRdRQD3rkkqnRSiNNAymcgEnXFgqwSPWzFnTp5If1Y3gVYGG6fNjB/1SauXk3yfqbuDs7n26qRGCLgf/CN7fCWB5mB7el4NO1R9b5X9M+RlZtxmw8UJyCUZy4ZDYluD3z00WsCDNxbrr+Qlsvlk2EjqRZOO6Jn9s5MAcBSLI6wx9DuFXSc8YxFRyrlnP/d88Aq2NgKDoHaReva9qhWh1KLplMHlj4xBh0+CpuOPrJYvlnMn8wwNtCfpO/dmKyvFtMSETzxalp/qYsYMSACQEgl6ZgOjnaqRrljv9xf9LCnxzIwkUOPCaqCpfs3AAieoNNp+LUfipTmX1ZRSay7/ZTqJ3N+y725CobOBL9Cez6TLPuJgzGi8+UoQ2v5E=
+deploy:
+  provider: openshift
+  user: joseluis.santos.cs@gmail.com
+  password:
+    secure: BbuhH8A546CD3y45odF33tZhLm889qWKUe0Vv2qptRt+b1NErYrkj1fnpVR2qvqlDmiq7jawXUFdgtbtxe6othUiuNo5VnHQjvHcHkoIB3rNpm9Q1hhu4ty/DtneIcLk2vBj5dUttW+3N1IYLaRbTGfzTZYrSZfKtvOp2r4dEJYdqOOfnY8bMkDH6bEJMdg5nXb+CMZ8k7KMaP+zO1VVNg6+PNqjiCC8FAbNVKj2QUbhp7vIXtKuBxFrb2gLQD+qPE2gxyF9Dq1E4AIvO7bdRnz5ZMI0kRdiXAk28k/o/MMdui/SYFlO6ysZQk9UtS1jkoGSw3pKMqY+UuBh53GUrCVDemweoqWqPqTeU8Vdul3LjQC2/4iUBfA9MVRtcRb5peDWf/FNnZyFDkAZM2i7fvVNoX3J/jP25+v087cb+vWwF/AOdEiKRhC+1jecEyc6mD0VXdafqizBxcWhPuxBn2tv4/Y6yGnz4npHB7qIywkcnVU6filrDFnMYWov5nNhiy+ALuzqBtU0KvFbxVQPcQa1myWmJRTdy2TS6yYtJc6wGR0tPzFJbokLdEmaWkfm2o9pj6LuQ84bDWvi9jfcZz9+5UgFsyfDY7jloQlzbdptv2ksJoRFOuVS2i5rsHVrY2/Uw2g7h+g4OYwSisjk23zrOSF+iTp9DYK/cOMA3K4=
+  app: followme
+  domain: followme-jlsantoso.rhcloud.com
+  on:
+    repo: CRS-JRS/inception
